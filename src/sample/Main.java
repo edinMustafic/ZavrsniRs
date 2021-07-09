@@ -63,7 +63,7 @@ class Landlord extends User
     String lastName;
     String phoneNumber;
 
-    ArrayList<Oglas> oglasi;
+    ArrayList<Listing> oglasi;
 
     public Landlord(String FN, String LN, String PN, String UN, String PW)
     {
@@ -77,7 +77,7 @@ class Landlord extends User
     void KreirajOglas()
     {
 
-        Oglas oglas = new Oglas();
+        Listing oglas = new Listing();
 
     }
 
@@ -109,7 +109,7 @@ class Customer extends User
 {
     float wallet;
 
-    ArrayList<Oglas> rezervisaniOglasi;
+    ArrayList<Listing> rezervisaniOglasi;
 
     public Customer(String UN, String PW)
     {
@@ -117,12 +117,12 @@ class Customer extends User
         wallet = 0;
     }
 
-    void Rezervisi(Oglas oglas)
+    void Rezervisi(Listing oglas)
     {
 
     }
 
-    void Otkazi(Oglas oglas)
+    void Otkazi(Listing oglas)
     {
 
     }
@@ -151,20 +151,20 @@ class Customer extends User
 
 
 
-class Oglas
+class Listing
 {
-    private enum TipSmjestaja
+    private enum AcomendationType
     {
-        Stan,
-        Kuca,
-        Vila,
-        Soba,
-        Vikendica
+        Apartment,
+        House,
+        Villa,
+        Room,
+        Cottage
     }
     String title;
     String country;
     String address;
-    TipSmjestaja type;
+    AcomendationType type;
     int surfaceArea;
     int numberOfRooms;
     int numberOfBeds;

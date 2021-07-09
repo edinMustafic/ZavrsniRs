@@ -29,7 +29,7 @@
             <Font name="Corbel Bold" size="18.0" />
          </font>
       </Button>
-      <Button layoutX="758.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #529aff;" text="Log in" textOverrun="CLIP">
+      <Button layoutX="758.0" layoutY="12.0" mnemonicParsing="false" onAction="#OpenLoginScene" prefHeight="26.0" prefWidth="113.0" style="-fx-background-color: #529aff;" text="Log in" textOverrun="CLIP">
          <font>
             <Font name="Corbel Bold" size="18.0" />
          </font>

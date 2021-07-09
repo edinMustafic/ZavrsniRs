@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="363.0" prefWidth="338.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LandlordRegister">
+<AnchorPane prefHeight="402.0" prefWidth="338.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LandlordRegister">
    <children>
       <Label layoutX="17.0" layoutY="14.0" style="-fx-font-size: 32;" text="Landlord Registration">
          <font>
@@ -23,7 +23,7 @@
             <Font size="18.0" />
          </font>
       </Label>
-      <Button layoutX="94.0" layoutY="288.0" mnemonicParsing="false" onAction="#RegisterButtonPressed" prefHeight="43.0" prefWidth="149.0" style="-fx-text-fill: red;" text="Register">
+      <Button layoutX="94.0" layoutY="344.0" mnemonicParsing="false" onAction="#RegisterButtonPressed" prefHeight="43.0" prefWidth="149.0" style="-fx-text-fill: red;" text="Register">
          <font>
             <Font size="20.0" />
          </font>
@@ -48,5 +48,6 @@
          </font>
       </Label>
       <TextField fx:id="phoneNumber" layoutX="108.0" layoutY="157.0" prefHeight="25.0" prefWidth="216.0" />
+      <Label fx:id="errorMessage" layoutX="8.0" layoutY="275.0" prefHeight="62.0" prefWidth="322.0" />
    </children>
 </AnchorPane>

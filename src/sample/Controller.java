@@ -22,7 +22,15 @@ public class Controller
         window.show();
     }
 
-
+    public void OpenLoginScene(ActionEvent event) throws Exception
+    {
+        System.out.println("===============================");
+        Parent logInParent = FXMLLoader.load(getClass().getResource("Login.fxml"));
+        Scene logInScene = new Scene(logInParent);
+        Stage window = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        window.setScene(logInScene);
+        window.show();
+    }
 
     private void RegisterRenter()
     {
