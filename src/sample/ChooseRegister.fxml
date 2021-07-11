@@ -2,21 +2,29 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-
-<AnchorPane prefHeight="203.0" prefWidth="433.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ChooseRegister">
+<AnchorPane prefHeight="200.0" prefWidth="425.0" style="-fx-border-color: #5c6e9c; -fx-border-radius: 15; -fx-border-width: 10;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.RegistrationSuccessful">
    <children>
-      <Label fx:id="InfoLabel" layoutX="149.0" layoutY="89.0" stylesheets="@style.css" text="No option selected" />
-      <Button layoutX="176.0" layoutY="130.0" mnemonicParsing="false" onAction="#NextButtonPressed" prefHeight="35.0" prefWidth="81.0" stylesheets="@style.css" text="Next" />
-      <Label layoutX="38.0" layoutY="53.0" stylesheets="@style.css" text="Register as:" />
-      <SplitMenuButton layoutX="148.0" layoutY="53.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="138.0" text="SplitMenuButton">
+      <Label layoutX="157.0" layoutY="21.0" prefHeight="27.0" prefWidth="111.0" text="Register as:" textFill="#0b3155">
+         <font>
+            <Font name="Avenir Next Bold" size="18.0" />
+         </font></Label>
+      <MenuButton id="grey" layoutX="146.0" layoutY="54.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="133.0" stylesheets="@button.css" text="Select">
         <items>
-          <MenuItem mnemonicParsing="false" onAction="#LandlordMenuItemSelected" text="Landlord" />
-          <MenuItem mnemonicParsing="false" onAction="#UserMenuItemSelected" text="User" />
+          <MenuItem mnemonicParsing="false" text="Landlord" />
+          <MenuItem mnemonicParsing="false" text="Tenant" />
         </items>
-      </SplitMenuButton>
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font>
+      </MenuButton>
+      <Button id="glass-grey" layoutX="168.0" layoutY="151.0" mnemonicParsing="false" onAction="#OkButtonPressed" prefHeight="25.0" prefWidth="90.0" stylesheets="@button.css" text="Next">
+         <font>
+            <Font name="Avenir Next Bold" size="13.0" />
+         </font></Button>
    </children>
 </AnchorPane>
